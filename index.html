@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -213,6 +215,107 @@
 
 
         <!--latest end-->
+
+        <!--popular product start-->
+
+        <section class="latest">
+            <div class="product-intro">
+                <h1>Popular <span>Products</span></h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, a?</p>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div>
+                    <img src="img/bu1.jpg" alt="">
+                    </div>
+                    <h1>
+                        Branded shoes
+                    </h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$600.00</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="card">
+                    <div>
+                    <img src="img/bu2.jpg" alt="">
+                    </div>
+                    <h1>
+                        Branded shoes
+                    </h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$600.00</p>
+                    <button>Add to cart</button>
+                </div>
+                <div class="card">
+                    <div>
+                    <img src="img/bu3.jpg" alt="">
+                    </div>
+                    <h1>
+                        Branded shoes
+                    </h1>
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p>$600.00</p>
+                    <button>Add to cart</button>
+                </div>
+                </div>
+        </section>
+        <!--popular product end-->
+        <section class="trends">
+            <div class="product-intro">
+                <h1>Top <span>Trends</span></h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, a?</p>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/headphone1.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/headphone2.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/headphone3.png" alt="">
+                  </div>
+                  
+                  <div class="swiper-pagination"></div>
+    </div>
+
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "coverflow",
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: "auto",
+              coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 1200,
+                modifier: 1,
+                slideShadows: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+            });
+          </script>
 </body>
 
 </html>
